@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        //Check constructor
         int length;
         int width;
         int height;
@@ -19,6 +20,7 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+            //Preset vars the size of the box
             length = 18;
             width = 18;
             height = 8;
@@ -36,7 +38,7 @@ namespace WindowsFormsApplication1
             {
                 Output.Text = "Your box is too big!";
             }
-
+            //If any side of the box is too big, it won't fit
             else if (userLength > length || userWidth > width || userHeight > height)
             {
                 Output.Text = "Some part of your box is too big!";
